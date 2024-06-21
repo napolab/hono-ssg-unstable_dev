@@ -1,0 +1,22 @@
+name = "hono-ssg"
+# pages_build_output_dir = "dist"
+main = "src/index.tsx"
+compatibility_date = "2024-06-21"
+compatibility_flags = [ "nodejs_compat" ]
+
+[vars]
+BUN_VERSION = "1.1.7"
+
+[[d1_databases]]
+binding = "DB"
+database_name = "hono-ssg"
+database_id = "fe5c8e90-3684-42f2-8af7-76b377e43826"
+
+[env.production.vars]
+BUN_VERSION = "1.1.7"
+
+
+[[env.production.d1_databases]]
+binding = "DB"
+database_name = "hono-ssg"
+database_id = "fe5c8e90-3684-42f2-8af7-76b377e43826"

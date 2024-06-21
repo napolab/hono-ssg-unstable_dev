@@ -1,0 +1,26 @@
+{
+  "name": "app",
+  "type": "module",
+  "scripts": {
+    "dev": "wrangler dev",
+    "build": "node --env-file=.env --import=tsx build.ts"
+  },
+  "dependencies": {
+    "better-sqlite3": "^11.0.0",
+    "drizzle-orm": "^0.31.2",
+    "hono": "^4.4.7"
+  },
+  "devDependencies": {
+    "@cloudflare/workers-types": "^4.20240620.0",
+    "@hono/vite-ssg": "^0.1.0",
+    "@types/bun": "latest",
+    "drizzle-kit": "^0.22.7",
+    "tsx": "^4.15.7",
+    "vite": "^5.3.1",
+    "wrangler": "^3.61.0"
+  },
+  "overrides": {
+    "@types/node": "20.8.3"
+  },
+  "packageManager": "yarn@1.22.9+sha256.97172a4c44be585d2048d68e24969b47cb7d52557a9d1be63322b789612b2ba3"
+}
