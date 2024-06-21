@@ -39,10 +39,6 @@ app.get(
   "/posts/:id",
   ssgParams<Env>(async (c) => {
     const posts = await c.var.db.query.posts.findMany();
-    console.debug(
-      "posts",
-      posts.map((post) => post.id),
-    );
 
     return posts.map((post) => ({ id: post.id }));
   }),

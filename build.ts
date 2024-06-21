@@ -1,5 +1,5 @@
 import { mkdir, writeFile } from "node:fs/promises";
-import { dirname, join, basename } from "node:path";
+import { dirname, join } from "node:path";
 import { unstable_dev } from "wrangler";
 import app from "./src";
 import { X_HONO_SSG_PARAMS_HEADER } from "./src/ssg";
